@@ -1,4 +1,4 @@
-/* CSS Custom Properties */
+/* CSS Custom Properties
 :root {
   --white: #FFFFFF;
   --tan-1: #FBF9F6;
@@ -113,7 +113,7 @@ input {
   color: var(--text-dark);
   background-image: none !important;
   /* prevent lastpass */
-  outline: none;
+  /* outline: none;
 }
 
 input:focus {
@@ -155,4 +155,4 @@ form:invalid button[type="submit"] {
 button[type="submit"] {
   grid-column: span 2;
   margin: 1vmin 0 0;
-}
+} */ 

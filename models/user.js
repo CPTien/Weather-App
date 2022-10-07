@@ -34,7 +34,6 @@ const userSchema = new Schema({
 });
 
 userSchema.pre("save", function (next) {
-    console.log("calling before create method");
     const user = this;
     if (!user.isModified('password')) return next();
     bcrypt.hash(user.password, SALT_ROUNDS, function (error, hash) {
