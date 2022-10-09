@@ -1,3 +1,5 @@
+// to be deleted, make sure the routing is correct before editing
+
 import {checkToken} from "../../utilities/users-service";
 
 export default function OrderHistoryPage() {
