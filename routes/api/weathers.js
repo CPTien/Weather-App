@@ -11,7 +11,7 @@ router.get('/all', weathersCtrl.getAllWeathers);
 
 // router.post('/add', ensureLoggedIn, weathersCtrl.addWeatherToLocationList);
 
-// router.get('/locationlist', ensureLoggedIn, eventsCtrl.getLocationList);
+router.get('/locationList', ensureLoggedIn, eventsCtrl.getLocationList);
 
 // router.delete('/:id', ensureLoggedIn, eventsCtrl.deleteWeatherFromLocationList);
 
