@@ -1,7 +1,66 @@
-##### Utilities, Services, APIs, oh my...
+# Workout Planner
+[Weather +]()
 
-- Utility modules: general purpose functions
+---
 
-- Service modules: specific logic such as functions for signing-up or logging in a user. Service modules often use and depend upon API modules...
+## Project Description/Features
+- 1
+- 2
+- 3
 
-- API modules: logic that make network requests such as AJAX calls to the backend or third-party APIs.
+---
+
+## Project Screenshots
+
+#### Index Page
+![Home Page]()<br/>
+#### Search Page
+![Search Page]()<br/>
+#### Detail Page
+![Detail Page]()<br/>
+#### Location List Page
+![Location List Page]()<br/>
+
+---
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- Express
+- EJS
+- Mongoose
+- MongoDB
+- Google Fonts
+- OpenWeatherAPI
+- Heroku
+- Whimsical
+
+---
+
+## Original Wireframe and Planning Concept
+- [Trello]()
+- [ERD]()
+- [Wireframe]()
+
+---
+## Wins
+TBD
+
+---
+
+## Hurdles
+TBD
+
+---
+
+## Future Add-Ons
+- 1
+- 2
+- 3
+- 4
+
+---
+
+## Credits
+- 1
