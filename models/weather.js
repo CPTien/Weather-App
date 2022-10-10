@@ -19,7 +19,7 @@ const weatherSchema = new Schema({
       icon: {type: String }
     }
     ],
-  base: stations,
+  base: {type: String },
     main: {
       temp: {type: Number },
       feels_like: {type: Number },

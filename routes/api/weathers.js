@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const eventsCtrl = require('../../controllers/api/weathers');
+const weathersCtrl = require('../../controllers/api/weathers');
 const ensureLoggedIn = require('../../config/ensureLoggedIn');
 
 router.post('/search', weathersCtrl.searchWeathers);
