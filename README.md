@@ -1,4 +1,4 @@
-# Workout Planner
+# Weather App
 [Weather +]()
 
 ---
