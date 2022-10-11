@@ -5,7 +5,9 @@ import "./NavBar.css";
 export default function NavBar({user, setUser}) {
 
   function handleLogOut(){
+    // user-service => remove token
     userService.logOut();
+    // set the User state to null
     setUser(null);
   }
 
@@ -23,5 +25,4 @@ export default function NavBar({user, setUser}) {
       &nbsp;&nbsp;
     </nav>
   );
-
 }

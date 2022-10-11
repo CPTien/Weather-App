@@ -7,12 +7,12 @@ router.post('/search', weathersCtrl.searchWeathers);
 
 router.get('/all', weathersCtrl.getAllWeathers);
 
-// router.post('/weatherId/details', weathersCtrl.getWeatherDetails);
+router.post('/weatherId/details', weathersCtrl.getWeatherDetails);
 
-// router.post('/add', ensureLoggedIn, weathersCtrl.addWeatherToLocationList);
+router.post('/add', ensureLoggedIn, weathersCtrl.addWeatherToLocationList);
 
-router.get('/locationList', ensureLoggedIn, eventsCtrl.getLocationList);
+router.get('/locationList', ensureLoggedIn, weathersCtrl.getLocationList);
 
-// router.delete('/:id', ensureLoggedIn, eventsCtrl.deleteWeatherFromLocationList);
+router.delete('/:id', ensureLoggedIn, weathersCtrl.deleteWeatherFromLocationList);
 
 module.exports = router;
