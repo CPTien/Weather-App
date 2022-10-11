@@ -20,7 +20,7 @@ export default function NavBar({user, setUser}) {
       <Link className='' to="/locationList">Location List Page</Link>
       &nbsp; | &nbsp;
       <Link className='' to={""} onClick={handleLogOut}>Logout</Link>
-      &nbsp;&nbsp;
+      &nbsp; | &nbsp;
       <span className='' >Welcome, {user.name}</span>
       &nbsp;&nbsp;
     </nav>

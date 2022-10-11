@@ -2,8 +2,6 @@ const Weather = require('../../models/weather');
 const fetch = require('node-fetch')
 
 
-// API ref = https://api.openweathermap.org/data/2.5/weather?q=tokyo&appid=
-
 // https://api.openweathermap.org/data/2.5/weather?q=${req.body.query}&appid=${process.env.API_KEY}
 
 // working properly
@@ -24,7 +22,12 @@ async function getAllWeathers(req, res) {
 
 async function getWeatherDetails(req, res) {
   // attention: do not pass weather id since the api needs city name. Be careful
-  const weather = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${req.body.params}&appid=${process.env.API_KEY}`).then(res => res.json());
+
+  // to fetch current data only:
+  const weather = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${req.body.params}&units=imperial&appid=${process.env.API_KEY_FOR_FORCAST}`).then(res => res.json());
+
+  // using lon and lat to fetch forecast data:
+  // const weather = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${req.body.params}&units=imperial&appid=${process.env.API_KEY_FOR_FORCAST}`).then(res => res.json());
   // console.log(`controller/api getWeatherDetail: `, weather)
   res.json(weather);
 }

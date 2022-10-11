@@ -13,15 +13,24 @@ function WeatherSearchPage({ getWeather }) {
   // const [temperature, setTemperature] = useState([]);
   // const [description, setDescription] = useState([]);
 
+  // to get lon and lat
+  const [lon, setLon] = useState("");
+  const [lat, setLat] = useState("");
+
   async function handleWeatherSearch(evt) {
     evt.preventDefault();
     const weathers = await weatherApiService.searchWeathers(weatherSearch);
     setWeatherList(weathers);
+    setLon(weathers.coord.lon);
+    setLat(weathers.coord.lat);
+    // testing below:
     console.log("handle weather search 1", weathers);
     console.log("handle weather search 2", weathers.main.temp)
     console.log("handle weather search 3", weathers.weather[0].description)
     // setTemperature(weathers.main.temp);
     // setDescription(weathers.weather[0].description);
+    // to get the Lon & Lat of the location, testing below:
+    console.log(`lon: ${weathers.coord.lon} && lat: ${weathers.coord.lat}`)
   }
 
   return (
@@ -50,6 +59,8 @@ function WeatherSearchPage({ getWeather }) {
           weather={weatherList} 
           key={weatherList.id} 
           getWeather={getWeather} 
+          lon={lon}
+          lat={lat}
           />
         {/* )): weatherList.error} */}
       </div>

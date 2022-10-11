@@ -26,6 +26,7 @@ console.log("this is from weather card", weather, typeof weather)
       {weather.name != undefined &&      
       <div>
         <Link to={`/weathers/${weather.name}`}>
+        {/* <Link to={`/weathers/${lon}&&${lat}`}> */}
           <button className="detailsBtn">
             Details
           </button>
