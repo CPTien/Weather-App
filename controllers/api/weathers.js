@@ -2,7 +2,7 @@ const Weather = require('../../models/weather');
 const fetch = require('node-fetch')
 
 
-// API ref = https://api.openweathermap.org/data/2.5/weather?q=tokyo&appid=171e03398366de1cdeab49c167737166
+// API ref = https://api.openweathermap.org/data/2.5/weather?q=tokyo&appid=
 
 // https://api.openweathermap.org/data/2.5/weather?q=${req.body.query}&appid=${process.env.API_KEY}
 
