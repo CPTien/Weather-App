@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import * as usersService from '../../utilities/users-service';
+import "./LoginForm.css"
 
 export default function LoginForm({setUser}) {
     // initial state, username and password is set to empty string

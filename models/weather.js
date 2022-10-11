@@ -7,6 +7,15 @@ const weatherSchema = new Schema({
     ref: 'User',
     required: true
   },
+  // name: {type: String},
+  // id: {type: Number},
+  // temperature: {type: Number},
+  // description: {type: String},
+  // feels_like: {type: Number},
+  // humidity: {type: Number},
+  // wind_speed: {type: Number},
+  // icon: {type: String},
+  
   coord: {
     lon: {type: Number },
     lat: {type: Number }

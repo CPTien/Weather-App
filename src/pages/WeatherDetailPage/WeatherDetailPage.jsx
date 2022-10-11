@@ -6,31 +6,32 @@ import "./WeatherDetailPage.css";
 function WeatherDetailPage({ weather, setWeather, lon, lat }) {
   
   const { weatherId } = useParams();
+  // weatherId = Tokyo
 
   const navigate = useNavigate();
 
-  const check = {
-    name: weather.name,
-  };
+  // const check = {
+  //   name: weather.id,
+  // };
   
   useEffect(function () {
     async function getWeather() {
       const weather = await weatherApiService.getWeatherDetails(weatherId);
       setWeather(weather);
-      console.log(weather);
+      console.log("get weather function in detail page",weather);
     }
     getWeather();
   }, []);
 
   async function handleAddToLocationList() {
-    const addWeather = await weatherApiService.addWeatherToLocationList(check);
-    console.log("weather detail 1", addWeather);
+    const addWeather = await weatherApiService.addWeatherToLocationList();
+    console.log("handel add to location list in detail page", addWeather);
     navigate('/locationList')
   }
 
   return (
     <>
-      <div>{weather.weather? <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}></img> : null }</div>
+      <div>{weather.weather? <img alt={weather.name} src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}></img> : null }</div>
       <div><h1> {weather.name}</h1></div>
       <div>{weather.main ? <p>Temperature: {weather.main.temp.toFixed()} °F</p> : null }</div>
       <div>{weather.weather ? <p>Description: {weather.weather[0].main}</p> : null }</div>
