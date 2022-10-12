@@ -25,10 +25,21 @@ nav {
   margin-right: 50px;
 }
 
+.nav-1:hover {
+
+
+  color:bisque;
+
+}
+
 .nav-2 {
   float: right;
   margin-left: 30px;
   margin-right: 25px;
+}
+
+.nav-2:hover {
+  color:bisque;
 }
 
 
@@ -47,14 +58,13 @@ nav {
   margin-top: 5px;
 }
 
-.nav-no-icon:hover {
+/* .nav-no-icon:hover {
   font-size: 14px;
   color:bisque;
   margin-top: 3px;
-}
+} */
 
 .welcome-message:hover {
   font-size: 12px;
   color:white;
-  margin-top: 5px;
 }
