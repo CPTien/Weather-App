@@ -35,25 +35,30 @@ function WeatherSearchPage({ getWeather }) {
 
   return (
     <>
-      <form className="" onSubmit={handleWeatherSearch}>
-        <br />
-        <h1>Search for Weather</h1>
+      <center>
+        
+      <form className="weather-search-form" onSubmit={handleWeatherSearch}>
 
+        <h1 className="">Search for Weather - to be deleted</h1>
+
+        <div className="input-plus-button">
         <input
+          className="input-for-search"
           type="text"
-          placeholder='Search Location here ...'
+          placeholder='Enter Location Here ...'
           required
           value={weatherSearch}
           onChange={(evt) => setWeatherSearch(evt.target.value)}
         />
         
-        <button className='searchBtn'>
+        <button className='btn-for-search'>
           Search
         </button>
+        </div>
 
       </form>
 
-      <div>
+      <div className="weather-card-div">
         {/* {!weatherList.error ? weatherList.map((weather) => ( */}
           <WeatherCard 
           weather={weatherList} 
@@ -64,6 +69,7 @@ function WeatherSearchPage({ getWeather }) {
           />
         {/* )): weatherList.error} */}
       </div>
+      </center>
     </>
   );
 }
