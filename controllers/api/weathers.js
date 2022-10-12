@@ -1,7 +1,6 @@
 const Weather = require('../../models/weather');
 const fetch = require('node-fetch')
 
-
 // https://api.openweathermap.org/data/2.5/weather?q=${req.body.query}&appid=${process.env.API_KEY}
 
 // working properly
@@ -33,22 +32,11 @@ async function getWeatherDetails(req, res) {
 }
 
 async function addWeatherToLocationList(req, res) {
-  const locationList = await Weather(req.body);
   req.body.user = req.user._id;
   const newLocationList = new Weather(req.body); 
   await newLocationList.save();
-  res.json(newLocationList)
-  // let weather = await Weather.findOne({weatherId: req.body.name})
-  // if (weather) {
-  //     weather.users.push(req.user._id);
-  //     await weather.save();
-  //     res.json(weather);
-  // } else {
-  //     req.body.users = req.user._id;
-  //     const newWeather = new Weather(req.body);
-  //     await newWeather.save();
-  //     res.json(newWeather);
-  // }
+  console.log("weather controller - add location function", newLocationList)
+  res.json(newLocationList);
 }
 
 async function getLocationList(req, res) {
@@ -59,9 +47,9 @@ async function getLocationList(req, res) {
 }
 
 async function deleteWeatherFromLocationList(req, res) {
-  // const removeWeather = await Weather.findByIdAndDelete(req.params.id);
-  // console.log(removeEvent)
-  // res.json(removeEvent);
+  const removeWeather = await Weather.findByIdAndDelete(req.params.id);
+  console.log(removeWeather)
+  res.json(removeWeather);
 }
 
 module.exports = {

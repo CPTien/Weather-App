@@ -33,6 +33,7 @@
 }
 
 .detail-btn {
+    float: left;
     color: white;
     margin-top: 20px;
 	background-color: rgba(0,0,0,0.25);
@@ -42,7 +43,7 @@
     cursor:pointer;
     overflow: hidden; 
     padding: 10px;
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
 }
 
 .detail-btn:hover {

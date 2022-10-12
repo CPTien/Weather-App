@@ -28,11 +28,8 @@ function LocationListPage({ weather, locationList, setLocationList, user }) {
       
       {userLocationList && userLocationList.map((weather, idx) => 
         <div key={idx} >
-          <header>
-            <img src="" alt={weather.name}/>
-          </header>
           <div className="">
-            {weather.name}
+            {weather.location}
           </div>
           <footer>
             <button className="" onClick={() => {deleteWeatherFromLocationList(weather._id)}}>Delete</button>
