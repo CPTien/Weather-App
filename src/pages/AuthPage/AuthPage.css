@@ -40,13 +40,12 @@
 }
 
 main {
-	background-image: linear-gradient(to right bottom, #003a9c, #003692, #003288, #002e7f, #002a75, #00276c, #002463, #00215a, #001e50, #001a45, #00163b, #001231);
-	background-attachment: fixed;
+	background-image: linear-gradient(to right bottom, #0048c2, #0042b3, #003ca5, #003797, #003189, #002d7c, #00286e, #002461, #001f50, #001a40, #001430, #000c20);
 	width: 100vw;
 	height: 100vh;
 }
 
-span {
+.span-heart {
 	color: red;
 	font-size:80px;
 	font-weight: bold;

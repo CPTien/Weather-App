@@ -57,15 +57,15 @@ export default class SignUpForm extends Component {
             
                     <form className="sign-in-form" autoComplete="off" onSubmit={this.handleSubmit}>
                         <label className='label-in-signin-form'>Name</label>
-                        <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required/>
+                        <input className='input-in-signin-form' type="text" name="name" value={this.state.name} onChange={this.handleChange} required/>
                         <label className='label-in-signin-form'>Email</label>
-                        <input type="email" name="email" value={this.state.email} onChange={this.handleChange}
+                        <input className='input-in-signin-form' type="email" name="email" value={this.state.email} onChange={this.handleChange}
                                required/>
                         <label className='label-in-signin-form'>Password</label>
-                        <input type="password" name="password" value={this.state.password} onChange={this.handleChange}
+                        <input className='input-in-signin-form' type="password" name="password" value={this.state.password} onChange={this.handleChange}
                                required/>
                         <label className='label-in-signin-form'>Confirm</label>
-                        <input type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange}
+                        <input className='input-in-signin-form' type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange}
                                required/>
                         <button className='sl-button' type="submit" disabled={disable}>SIGN UP</button>
                     </form>
