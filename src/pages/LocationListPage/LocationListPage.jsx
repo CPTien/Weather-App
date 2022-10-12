@@ -28,12 +28,21 @@ function LocationListPage({ weather, locationList, setLocationList, user }) {
       
       {userLocationList && userLocationList.map((weather, idx) => 
         <div key={idx} >
-          <div className="">
-            {weather.location}
-          </div>
-          <footer>
-            <button className="" onClick={() => {deleteWeatherFromLocationList(weather._id)}}>Delete</button>
+          
+          <div><img alt={weather.icon} src={`http://openweathermap.org/img/wn/${weather.icon}@2x.png`}></img></div>
+          
+          <div className="">Location: {weather.location}</div>
+
+          <div className="">Description: {weather.description}</div>
+
+          <div className="">Temperature: {weather.temp}</div>
+
+          <footer className="">
+
+          <button className="" onClick={() => {deleteWeatherFromLocationList(weather._id)}}>Delete</button>
+
           </footer>
+
         </div>)}
       </>
   );

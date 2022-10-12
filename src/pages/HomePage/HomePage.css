@@ -1,1 +1,46 @@
+.home-container {
+    display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
 
+h1 {
+    grid-column-start: 1;
+	grid-column-end: 3;
+    color: white;
+    font-size: 60px;
+    margin-left:80px;
+    margin-top: 30px;
+}
+
+h2 {
+    color: beige;
+    font-size: 30px;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+/* .review-1 {
+    float: left;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.review-2 {
+    float: right;
+    margin-top: 80px;
+    margin-left: 40px;
+} */
+
+.review-3 {
+    grid-column-start: 3;
+	grid-column-end: 4;
+    grid-row-start: 2;
+} 
+
+.image-in-homepage {
+    grid-column-start: 4;
+	grid-column-end: 5;
+    grid-row-start: 2;
+    margin-top: 190px;
+    margin-left: 150px;
+}

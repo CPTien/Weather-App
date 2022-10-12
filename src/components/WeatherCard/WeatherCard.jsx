@@ -4,15 +4,16 @@ import "./WeatherCard.css";
 // icon URL example = http://openweathermap.org/img/wn/10d@2x.png
 
 
-function WeatherCard({ weather }) {
+function WeatherCard({ weather, temperature, icon, description }) {
 
   return (
     
     <div className="container">
       <div className="weather-card">
       {/* 1st method - to call the img from api */}
-      <div className="weather-icon">{weather.weather? <img alt={weather.name} src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}></img> : null }</div>
-
+      {/* <div className="weather-icon">{weather.weather? <img alt={weather.name} src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}></img> : null }</div> */}
+      <div className="weather-icon"><img alt={icon} src={`http://openweathermap.org/img/wn/${icon}@2x.png`}></img></div>
+      
       {/* 2nd method - to call the img from public local storage */}
       {/* <div>{weather.weather? <img src={`icons/${weather.weather[0].icon}.png`}></img> : null }</div> */}
       
@@ -21,9 +22,11 @@ function WeatherCard({ weather }) {
       {/* toFixed method rounds the number */}
       {/* cannot just to {weather.main.temp}, need to have the condition */}
 
-      <div className="temp">{weather.main ? <p> {weather.main.temp.toFixed()} °F</p> : null }</div>
+      {/* <div className="temp">{weather.main ? <p> {weather.main.temp.toFixed()} °F</p> : null }</div> */}
+      <div className="temp"><p> {temperature} °F</p> </div>
 
       {/* <div>{weather.weather ? <p>{weather.weather[0].main}</p> : null }</div> */}
+      <div><p>{description}</p></div>
       </div>
 
       

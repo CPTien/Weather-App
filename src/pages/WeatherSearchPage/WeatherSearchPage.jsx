@@ -10,25 +10,31 @@ function WeatherSearchPage({ getWeather }) {
   // Render List of Weathers via keywords
   const [weatherList, setWeatherList] = useState("");
   // sara's help
-  // const [temperature, setTemperature] = useState([]);
-  // const [description, setDescription] = useState([]);
+  const [icon, setIcon] = useState("");
+  const [temperature, setTemperature] = useState("");
+  const [description, setDescription] = useState("");
 
   // to get lon and lat
-  const [lon, setLon] = useState("");
-  const [lat, setLat] = useState("");
+  // const [lon, setLon] = useState("");
+  // const [lat, setLat] = useState("");
+  // setLon(weathers.coord.lon);
+  // setLat(weathers.coord.lat);
 
   async function handleWeatherSearch(evt) {
     evt.preventDefault();
     const weathers = await weatherApiService.searchWeathers(weatherSearch);
     setWeatherList(weathers);
-    setLon(weathers.coord.lon);
-    setLat(weathers.coord.lat);
+
+    // method:2
+    setIcon(weathers.weather[0].icon);
+    setTemperature(weathers.main.temp);
+    setDescription(weathers.weather[0].description);
+
     // testing below:
     console.log("handle weather search 1", weathers);
     console.log("handle weather search 2", weathers.main.temp)
     console.log("handle weather search 3", weathers.weather[0].description)
-    // setTemperature(weathers.main.temp);
-    // setDescription(weathers.weather[0].description);
+
     // to get the Lon & Lat of the location, testing below:
     console.log(`lon: ${weathers.coord.lon} && lat: ${weathers.coord.lat}`)
   }
@@ -62,10 +68,14 @@ function WeatherSearchPage({ getWeather }) {
         {/* {!weatherList.error ? weatherList.map((weather) => ( */}
           <WeatherCard 
           weather={weatherList} 
+          temperature={temperature}
+          icon={icon}
+          description={description}
           key={weatherList.id} 
           getWeather={getWeather} 
-          lon={lon}
-          lat={lat}
+
+          // lon={lon}
+          // lat={lat}
           />
         {/* )): weatherList.error} */}
       </div>

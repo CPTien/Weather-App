@@ -7,12 +7,13 @@ const weatherSchema = new Schema({
   //   ref: 'User',
   //   required: true
   // },
-  location: {type: String },
-  // icon: {type: String },
-  // temp: {type: Number },
-  // feels_like: {type: Number },
-  // humidity: {type: Number },
-  // wind_speed: {type: Number },
+  location: { type: String },
+  icon: { type: String },
+  temp: { type: Number },
+  description: { type: String }, 
+  feels_like: { type: Number },
+  humidity: { type: Number },
+  wind_speed: { type: Number },
   
   // coord: {
   //   lon: {type: Number },
