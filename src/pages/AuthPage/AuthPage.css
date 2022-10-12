@@ -1,7 +1,53 @@
-* {
-    margin: 0;
+.app-name {
+    /* color: red; */
+		padding-left: 50px;
+		padding-top: 30px;
+		padding-bottom: 40px;
+		font-size: 80px;
+		color: white;
 }
 
-h1 {
-    color: red;
+.numba-won {
+	color: white;
+	padding-top: 20px;
+	padding-left: 50px;
+	font-size: 50px;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.button-2 {
+    color: white;
+    margin: auto;
+		background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+}
+
+.signup-login {
+    /* background-color: red; */
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+}
+
+.signupform {
+	grid-column-start: 4;
+	grid-column-end: 6;
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
+
+main {
+	background-image: linear-gradient(to right bottom, #003a9c, #003692, #003288, #002e7f, #002a75, #00276c, #002463, #00215a, #001e50, #001a45, #00163b, #001231);
+	background-attachment: fixed;
+	width: 100vw;
+	height: 100vh;
+}
+
+span {
+	color: red;
+	font-size:80px;
+	font-weight: bold;
 }
