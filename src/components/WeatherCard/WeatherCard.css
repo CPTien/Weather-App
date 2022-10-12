@@ -1,12 +1,53 @@
 .weather-card {
-    background-color: rgba(0,0,0,0.4);
-    display: flex;
-    flex-direction: column;
-    width: 450px;
+    border: 1px sold;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* display: grid;
+    grid-template-columns: repeat(6, 1fr); */
+    width: 400px;
+    height: 100px;
     align-items: center;
-    box-shadow: 3px black;
+    color: white;
+    
+}
+.weather-icon {
+    float: left;
+    margin-left: 5px;
+}
+
+.location-name {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-right:10px;
+    margin-left:40px;
+}
+
+.temp {
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-right:20px;
 }
 
 .detail-btn {
-    margin-bottom: 20px;
+    color: white;
+    margin-top: 20px;
+	background-color: rgba(0,0,0,0.25);
+    border: 1px solid;
+    border-color: rgba(0,0,0,0.25);
+    border-radius: 10px;
+    cursor:pointer;
+    overflow: hidden; 
+    padding: 10px;
+    margin-bottom: 120px;
+}
+
+.detail-btn:hover {
+    color:bisque;
+
+	background-color: rgba(0,0,0,0.25);
+
 }

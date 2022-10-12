@@ -1,10 +1,10 @@
 .app-name {
     /* color: red; */
-		padding-left: 50px;
-		padding-top: 30px;
-		padding-bottom: 40px;
-		font-size: 80px;
-		color: white;
+	padding-left: 50px;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	font-size: 80px;
+	color: white;
 }
 
 .numba-won {
@@ -28,8 +28,8 @@
 
 .signup-login {
     /* background-color: red; */
-		display: grid;
-		grid-template-columns: repeat(6, 1fr);
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
 }
 
 .signupform {
