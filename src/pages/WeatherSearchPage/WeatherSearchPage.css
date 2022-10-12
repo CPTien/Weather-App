@@ -28,19 +28,10 @@
     cursor:pointer;
     overflow: hidden; 
     padding: 10px;
-}
-
-.input-plus-button {
-    /* border: 5px;
-    border-color: aquamarine;
-    background-color: aquamarine; */
+    margin-bottom: 120px;
 }
 
 
-::placeholder {
-
-    
-}
 
 .weather-card-div {
 

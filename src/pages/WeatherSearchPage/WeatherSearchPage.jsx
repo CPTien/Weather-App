@@ -39,7 +39,7 @@ function WeatherSearchPage({ getWeather }) {
         
       <form className="weather-search-form" onSubmit={handleWeatherSearch}>
 
-        <h1 className="">Search for Weather - to be deleted</h1>
+        {/* <h1 className="">Search for Weather - to be deleted</h1> */}
 
         <div className="input-plus-button">
         <input
