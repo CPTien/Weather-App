@@ -12,19 +12,20 @@ export default function NavBar({user, setUser}) {
   }
 
   return (
+
     <nav>
+
+      <Link className='nav nav-1 app-icon' to="/">Weather +</Link>
       
-      <Link className='nav nav-1' to="/">Home Page</Link>
-      &nbsp;&nbsp;
-      <Link className='nav nav-1' to="/weathers">Weather Search Page</Link>
-      &nbsp;&nbsp;
-      <Link className='nav nav-1' to="/locationList">Location List Page</Link>
-      &nbsp;&nbsp;
-      <span className='nav nav-2' >Welcome, {user.name}</span>
-      &nbsp;&nbsp;
-      <Link className='nav nav-2' to={""} onClick={handleLogOut}>Logout</Link>
-      &nbsp;&nbsp;
+      <Link className='nav nav-1 nav-no-icon' to="/weathers">Search Weather</Link>
+      
+      <Link className='nav nav-1 nav-no-icon' to="/locationList">Saved Locations</Link>
+      
+      <Link className='nav nav-2 nav-no-icon' to={""} onClick={handleLogOut}>Logout</Link>
+
+      <span className='nav nav-2 welcome-message nav-no-icon' >Welcome! {user.name}</span>
 
     </nav>
+
   );
 }
