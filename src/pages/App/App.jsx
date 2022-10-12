@@ -16,6 +16,9 @@ import LocationListPage from '../LocationListPage/LocationListPage';
 function App() {
   // set the user by calling getUser function
   const [user, setUser] = useState(getUser());
+
+  console.log(user);
+
   const [weather, setWeather] = useState({});
   const [locationList, setLocationList] = useState();
 
@@ -28,6 +31,7 @@ function App() {
             <Route path="/" element={<HomePage/>}/>
             <Route path="/weathers" element={<WeatherSearchPage/>}/>
             <Route path="/weathers/:weatherId" element={<WeatherDetailPage 
+              user={user}
               weather={weather}
               setWeather={setWeather}
               locationList={locationList}

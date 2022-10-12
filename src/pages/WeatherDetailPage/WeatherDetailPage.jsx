@@ -4,7 +4,7 @@ import * as weatherApiService from "../../utilities/weather-api-service";
 import "./WeatherDetailPage.css";
 import { useState } from "react";
 
-function WeatherDetailPage({ weather, setWeather }) {
+function WeatherDetailPage({ weather, setWeather, user }) {
   
   const { weatherId } = useParams();
   // weatherId = Tokyo
@@ -18,6 +18,7 @@ function WeatherDetailPage({ weather, setWeather }) {
   const navigate = useNavigate();
 
   const savedLocationInfo = {
+    user: user,
     location: weather.name,
     icon: icon,
     temp: temperature,
