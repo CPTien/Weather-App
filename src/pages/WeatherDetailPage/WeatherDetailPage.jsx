@@ -53,36 +53,38 @@ function WeatherDetailPage({ weather, setWeather, user }) {
 
   return (
     <>
+    <center>
       <div>
         {/* icon */}
         {/* <div>{weather.weather? <img alt={weather.name} src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}></img> : null }</div> */}
         <div><img alt={weather.name} src={`http://openweathermap.org/img/wn/${icon}@2x.png`}></img></div>
 
         {/* location */}
-        <div><h1> {weather.name}</h1></div>
+        <div>{weather.name}</div>
 
         {/* temp */}
         {/* <div>{weather.main ? <p>Temperature: {weather.main.temp.toFixed()} °F</p> : null }</div> */}
-        <div><p>Temperature: {temperature} °F</p></div>
+        <div>Temperature: {temperature} °F</div>
 
         {/* description */}
         {/* <div>{weather.weather ? <p>Description: {weather.weather[0].main}</p> : null }</div> */}
-        <div><p>Description: {description}</p></div>
+        <div>Description: {description}</div>
 
         {/* feels_like */}
         {/* <div>{weather.main ? <p>Feels Like: {weather.main.feels_like.toFixed()}</p> : null }</div> */}
-        <div><p>Feels Like: {feels_like}</p></div>
+        <div>Feels Like: {feels_like}</div>
 
         {/* humidity */}
         {/* <div>{weather.main ? <p>Humidity: {weather.main.humidity}</p> : null }</div> */}
-        <div><p>Humidity: {humidity}</p></div>
+        <div>Humidity: {humidity}</div>
 
         {/* wind_speed */}
         {/* <div>{weather.wind ? <p>Wind Speed: {weather.wind.speed.toFixed()}</p> : null }</div> */}
-        <div><p>Wind Speed: {wind_speed}</p></div>
+        <div>Wind Speed: {wind_speed}</div>
 
       </div>
       <button className="" onClick={handleAddToLocationList}>Add Location to List</button>
+      </center>
     </>
   );
 }

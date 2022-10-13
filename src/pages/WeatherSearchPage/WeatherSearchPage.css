@@ -11,6 +11,10 @@
     margin-right: 15px;
 }
 
+.input-for-search:hover {
+    box-shadow: 1px 1px 15px white;
+}
+
 .btn-for-search {
     color: white;
     margin: auto;
@@ -28,6 +32,9 @@
 }
 
 .btn-for-search:hover {
-    color:bisque;
+    color:blue;
+    border-color: white;
+    background-color: white;
+    box-shadow: 1px 1px 1px white;
 }
 

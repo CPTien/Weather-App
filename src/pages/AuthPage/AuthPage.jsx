@@ -2,12 +2,15 @@ import {useState} from "react";
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
 import LoginForm from '../../components/LoginForm/LoginForm';
 import "./AuthPage.css"
+import MyImage from './WeatherApp-Logo.png';
+
 
 export default function AuthPage({setUser}) {
   const [showSignUp, setShowSignUp] = useState(false);
   return (
     <main>
-      <h1 className="app-name">Weather +</h1>
+
+      <h1 className="app-name"><img src={MyImage} alt=""/>Weather °</h1>
       <div className="signup-login">
         <p className="numba-won">THE #1 RATED WEATHER APP IN MY <span className="span-heart">Heart</span></p>
         <div className="signupform">

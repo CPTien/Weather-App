@@ -1,16 +1,17 @@
 nav {
   height:34px;
-
   padding-top: 10px;
   padding-left: 10px;
   margin-bottom: 40px;
   background-color: rgba(0,0,0,0.25);
+  /* box-shadow: 0.2px 0px 50px white; */
 }
 
 .nav {
   color: white;
   text-decoration: none;
   font-size: 12px;
+  
 }
 /* 
 .nav:hover {

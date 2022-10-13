@@ -2,6 +2,7 @@ import { useState } from "react";
 import WeatherCard from "../../components/WeatherCard/WeatherCard";
 import * as weatherApiService from "../../utilities/weather-api-service";
 import './WeatherSearchPage.css'
+import { FiSearch } from 'react-icons/fi';
 
 function WeatherSearchPage({ getWeather }) {
 
@@ -58,7 +59,7 @@ function WeatherSearchPage({ getWeather }) {
         />
         
         <button className='btn-for-search'>
-          Search
+        <FiSearch />
         </button>
         </div>
 

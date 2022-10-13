@@ -1,54 +1,75 @@
 .weather-card {
     border: 1px sold;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.4);
-    /* display: grid;
-    grid-template-columns: repeat(6, 1fr); */
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+    width: 450px;
     height: 100px;
     align-items: center;
     color: white;
-    
+    box-shadow: 1px 1px 15px white;
+    margin-top: 35px;
 }
 .weather-icon {
-    float: left;
-    margin-left: 5px;
+    padding-left: 26px;
+    grid-column-start: 1;
+	grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 .location-name {
-    float: left;
-    font-size: 18px;
+    margin-top: 17px;
+    font-size: 22px;
     font-weight: bold;
-    margin-top: 40px;
-    margin-right:10px;
-    margin-left:40px;
+    /* margin-left: 24px; */
+    grid-column-start: 2;
+	grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .temp {
-    float: right;
-    font-size: 18px;
+    /* float: right; */
+    margin-top: 30px;
+    font-size: 30px;
     font-weight: bold;
-    margin-top: 40px;
-    margin-right:20px;
+    grid-column-start: 4;
+	grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+/* .desc {
+    margin-top: 15px;
+    grid-column-start: 1;
+	grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+} */
+
+.detail-btn-class {
+    grid-column-start: 9;
+	grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 4;
 }
 
 .detail-btn {
-    float: left;
     color: white;
-    margin-top: 20px;
 	background-color: rgba(0,0,0,0.25);
     border: 1px solid;
-    border-color: rgba(0,0,0,0.25);
-    border-radius: 10px;
+    border-color: rgb(255, 255, 255, 0.5);
+    padding: 8px 10px;
+    border-radius: 10px; 
     cursor:pointer;
-    overflow: hidden; 
-    padding: 10px;
-    /* margin-bottom: 120px; */
 }
 
 .detail-btn:hover {
     color:bisque;
-
 	background-color: rgba(0,0,0,0.25);
-
 }
+
+
+
