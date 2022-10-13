@@ -17,13 +17,13 @@ export default function NavBar({user, setUser}) {
 
       <Link className='nav nav-1 app-icon' to="/">Weather +</Link>
       
-      <Link className='nav nav-1 nav-no-icon' to="/weathers">Search Weather</Link>
+      <Link className='nav nav-1 nav-no-icon' to="/weathers">Search</Link>
       
-      <Link className='nav nav-1 nav-no-icon' to="/locationList">Saved Locations</Link>
+      <Link className='nav nav-1 nav-no-icon' to="/locationList">Locations</Link>
       
       <Link className='nav nav-2 nav-no-icon' to={""} onClick={handleLogOut}>Logout</Link>
 
-      <span className='nav nav-2 welcome-message nav-no-icon' >Welcome! {user.name}</span>
+      <span className='nav nav-2 welcome-message nav-no-icon' >Hi! {user.name}</span>
 
     </nav>
 

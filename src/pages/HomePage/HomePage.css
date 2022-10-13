@@ -44,3 +44,15 @@ h2 {
     margin-top: 190px;
     margin-left: 150px;
 }
+
+.ppl {
+    margin-top: 10px;
+    font-size: 25px;
+    color: wheat;
+}
+
+.position {
+    margin-top: 10px;
+    font-size: 20px;
+    color: red;
+}
