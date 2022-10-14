@@ -122,6 +122,7 @@
 	grid-column-end: 10;
     grid-row-start: 7;
     grid-row-end: 8;
+    margin-bottom: 20px;
 }
 
 .detail-btn-2 {
@@ -158,4 +159,46 @@
 	grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 7;
+}
+
+
+@media (max-width: 640px) {
+
+    .container-detail {
+        width: 350px;
+    }
+
+    .detail-btn-2 {
+        width: 300px;
+    }
+
+    .info {
+        font-size: 15px;
+        color: azure;
+    }
+    
+    .info-2 {
+        font-size: 15px;
+        color: azure;
+    }
+
+    .min-max-detail-data {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+
+    .temp-detail {
+        font-size: 38px;
+        font-weight: bold;
+    }
+
+    .location-detail {
+        font-size: 24px;
+    }
+
+    .logo-detail-img {
+        width: 160px;
+        margin-left: 12px;
+    }
+
 }
