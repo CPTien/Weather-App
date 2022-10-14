@@ -64,7 +64,7 @@ h2 {
     color: white;
 }
 
-@media (min-width: 370px) {
+@media (min-width: 500px) {
     .home-container {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
@@ -82,7 +82,11 @@ h2 {
     }
     
     
-    .h2 {
+    .review-2 {
+        display: none;
+    }
+
+    .review-3 {
         display: none;
     }
     

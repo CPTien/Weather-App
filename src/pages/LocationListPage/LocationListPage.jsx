@@ -36,7 +36,7 @@ function LocationListPage({ weather, locationList, setLocationList, user}) {
 
           {/* <div className="desc">{weather.description}</div> */}
 
-          <div className="temp">{weather.temp.toFixed()} °F</div>
+          <div className="temp">{weather.temp} °F</div>
 
           <div className="detail-btn-class">
           <button className="detail-btn" onClick={() => {deleteWeatherFromLocationList(weather._id)}}>Delete</button>
