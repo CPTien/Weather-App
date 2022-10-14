@@ -10,7 +10,7 @@ nav {
 .nav {
   color: white;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   
 }
 /* 
@@ -23,14 +23,21 @@ nav {
 .nav-1 {
   float: left;
   margin-left: 15px;
-  margin-right: 50px;
+  
+}
+
+.app-logo-nav {
+  float: left;
+  width: 32px;
+  margin-right: 45px;
 }
 
 .nav-1:hover {
-
-
   color:bisque;
+}
 
+.nav-search-location {
+  margin-right: 45px;
 }
 
 .nav-2 {
@@ -43,11 +50,9 @@ nav {
   color:bisque;
 }
 
-
-
-.app-icon {
+.app-icon-text {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .app-icon:hover {
@@ -69,3 +74,4 @@ nav {
   font-size: 12px;
   color:white;
 }
+

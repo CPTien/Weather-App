@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom';
 import * as userService from '../../utilities/users-service';
 import "./NavBar.css";
+import MyImage from './Logo.png';
 
 export default function NavBar({user, setUser}) {
 
@@ -15,11 +16,12 @@ export default function NavBar({user, setUser}) {
 
     <nav>
 
-      <Link className='nav nav-1 app-icon' to="/">Weather +</Link>
+      <Link className='nav nav-1 app-icon-text' to="/">Weather </Link>
+      <img className="app-logo-nav" src={MyImage} alt=""/>
       
-      <Link className='nav nav-1 nav-no-icon' to="/weathers">Search Location</Link>
+      <Link className='nav nav-1 nav-no-icon nav-search-location' to="/weathers">Search Location</Link>
       
-      <Link className='nav nav-1 nav-no-icon' to="/locationList">Location List</Link>
+      <Link className='nav nav-1 nav-no-icon nav-location-list' to="/locationList">Location List</Link>
       
       <Link className='nav nav-2 nav-no-icon' to={""} onClick={handleLogOut}>Logout</Link>
 

@@ -1,11 +1,13 @@
 .home-container {
     display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(10, 1fr);
 }
 
 .instruction {
     grid-column-start: 1;
-	grid-column-end: 3;
+	grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
     color: white;
     font-size: 60px;
     margin-left:80px;
@@ -20,30 +22,34 @@ h2 {
     margin-left: 100px;
 }
 
-/* .review-1 {
-    float: left;
-    margin-top: 30px;
-    margin-left: 40px;
+.review-1 {
+    grid-column-start: 1;
+	grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .review-2 {
-    float: right;
-    margin-top: 80px;
-    margin-left: 40px;
-} */
+    grid-column-start: 5;
+	grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
 
 .review-3 {
-    grid-column-start: 3;
-	grid-column-end: 4;
-    grid-row-start: 2;
+    grid-column-start: 1;
+	grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 4;
 } 
 
 .image-in-homepage {
-    grid-column-start: 4;
-	grid-column-end: 5;
-    grid-row-start: 2;
-    margin-top: 190px;
-    margin-left: 150px;
+    grid-column-start: 5;
+	grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    margin-top: 139px;
+    margin-left: 10px;
 }
 
 .ppl {
