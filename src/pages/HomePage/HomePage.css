@@ -1,60 +1,56 @@
 .home-container {
     display: grid;
-	grid-template-columns: repeat(10, 1fr);
+	grid-template-columns: repeat(8, 1fr);
 }
 
 .instruction {
     grid-column-start: 1;
-	grid-column-end: 6;
+	grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
     color: white;
-    font-size: 60px;
+    font-size: 50px;
     margin-left:80px;
     margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 
 h2 {
     color: beige;
-    font-size: 30px;
-    margin-top: 150px;
-    margin-left: 100px;
+    font-size: 24px;
+    margin-top: 130px;
+    margin-left: 120px;
 }
 
 .review-1 {
     grid-column-start: 1;
-	grid-column-end: 10;
+	grid-column-end: 9;
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 4;
 }
 
 .review-2 {
-    grid-column-start: 5;
-	grid-column-end: 9;
+    grid-column-start: 3;
+	grid-column-end: 5;
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 5;
+    padding-top: 100px;
 }
 
 .review-3 {
-    grid-column-start: 1;
-	grid-column-end: 10;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-column-start: 2;
+	grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding-left:0px;
+    padding-top: 200px;
 } 
 
-.image-in-homepage {
-    grid-column-start: 5;
-	grid-column-end: 10;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    margin-top: 139px;
-    margin-left: 10px;
-}
 
 .ppl {
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 20px;
     color: wheat;
 }
 
@@ -64,39 +60,36 @@ h2 {
     color: white;
 }
 
-/* @media (min-width: 500px) {
-    .home-container {
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-    }
-    
+@media (max-width: 1300px) {
     .instruction {
         grid-column-start: 1;
-        grid-column-end: 10;
+        grid-column-end: 6;
         grid-row-start: 1;
         grid-row-end: 2;
         color: white;
-        font-size: 30px;
+        font-size: 40px;
         margin-left:80px;
         margin-top: 30px;
     }
-    
+
+    .review-1 {
+        color: transparent;
+    }
     
     .review-2 {
-        display: none;
-    }
-
-    .review-3 {
-        display: none;
+        color: transparent;
     }
     
-    .review-1 {
-        grid-column-start: 1;
-        grid-column-end: 10;
-        grid-row-start: 2;
-        grid-row-end: 3;
+    .review-3 {
+        color: transparent;
     } 
+    
 
+    .ppl {
+        color: transparent;
+    }
 
-} */
-
+    .position {
+        color: transparent;
+    }
+}
