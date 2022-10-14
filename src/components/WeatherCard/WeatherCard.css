@@ -1,5 +1,5 @@
 .weather-card {
-    border: 1px sold;
+    border: 1px solid;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.3);
     display: grid;
@@ -11,46 +11,40 @@
     box-shadow: 1px 1px 15px white;
     margin-top: 35px;
 }
+
 .weather-icon {
-    padding-left: 26px;
-    grid-column-start: 1;
-	grid-column-end: 4;
+    justify-self: start;
+    grid-column-start: 2;
+	grid-column-end: 10;
     grid-row-start: 2;
     grid-row-end: 4;
 }
 
 .location-name {
+    justify-self: start;
     margin-top: 17px;
     font-size: 22px;
-    font-weight: bold;
-    /* margin-left: 24px; */
-    grid-column-start: 2;
+    grid-column-start: 5;
 	grid-column-end: 10;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 
 .temp {
-    /* float: right; */
+    justify-self: start;
     margin-top: 30px;
     font-size: 30px;
     font-weight: bold;
-    grid-column-start: 4;
-	grid-column-end: 9;
+    grid-column-start: 5;
+	grid-column-end: 10;
     grid-row-start: 2;
     grid-row-end: 5;
 }
 
-/* .desc {
-    margin-top: 15px;
-    grid-column-start: 1;
-	grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-} */
 
 .detail-btn-class {
-    grid-column-start: 9;
+    justify-self: end;
+    grid-column-start: 1;
 	grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 4;
@@ -69,6 +63,7 @@
 .detail-btn:hover {
     color:bisque;
 	background-color: rgba(0,0,0,0.25);
+    box-shadow: 1px 1px 15px white;
 }
 
 

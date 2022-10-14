@@ -1,0 +1,149 @@
+.container-detail {
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+    width: 450px;
+    height: 500px;
+    align-items: center;
+    color: white;
+    box-shadow: 1px 1px 15px white;
+    margin-top: 150px;
+}
+
+.logo-detail {
+    /* padding-left: 26px; */
+    justify-self: start;
+    grid-column-start: 2;
+	grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.logo-detail-img {
+    width: 180px;
+}
+
+.location-detail {
+    align-self: end;
+    justify-self: end;
+    margin-top: 17px;
+    font-size: 30px;
+    font-weight: bold;
+    grid-column-start: 1;
+	grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.temp-detail {
+    justify-self: end;
+    margin-top: 50px;
+    font-size: 45px;
+    font-weight: bold;
+    grid-column-start: 1;
+	grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.des-detail-data {
+    justify-self: end;
+    grid-column-start: 2;
+	grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.des-detail-text {
+    justify-self: start;
+    grid-column-start: 2;
+	grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.feels-detail-data {
+    justify-self: end;
+    grid-column-start: 2;
+	grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.feels-detail-text {
+    justify-self: start;
+    grid-column-start: 2;
+	grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.humidity-detail-data {
+    justify-self: end;
+    grid-column-start: 2;
+	grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.humidity-detail-text {
+    justify-self: start;
+    grid-column-start: 2;
+	grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.wind-detail-data {
+    justify-self: end;
+    grid-column-start: 2;
+	grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.wind-detail-text {
+    justify-self: start;
+    grid-column-start: 2;
+	grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.add-btn-detail {
+    justify-self: center;
+    grid-column-start: 2;
+	grid-column-end: 10;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.detail-btn-2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    color: white;
+	background-color: rgba(0,0,0,0.25);
+    border: 1px solid;
+    border-color: rgb(255, 255, 255, 0.5);
+    padding: 8px 10px;
+    border-radius: 10px; 
+    cursor:pointer;
+}
+
+.detail-btn-2:hover {
+    box-shadow: 1px 1px 15px white;
+    color: beige;
+}
+
+.info {
+    font-size: 20px;
+    color: bisque;
+}
+
+.info-2 {
+    font-size: 20px;
+    color: azure;
+}

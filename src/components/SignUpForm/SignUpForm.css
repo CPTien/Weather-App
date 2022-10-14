@@ -9,6 +9,7 @@
   margin-top: 30px;
   border: 10px;
   border-radius: 10px;
+  box-shadow: 1px 1px 1000000px white;
 }
 
 .label-in-signin-form {
