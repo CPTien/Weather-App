@@ -20,14 +20,12 @@
     color: white;
     margin: auto;
 	background-color: Transparent;
-    background-repeat:no-repeat;
     border: none;
     cursor:pointer;
     overflow: hidden; 
 }
 
 .signup-login {
-	
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 }
