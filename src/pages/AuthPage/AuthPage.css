@@ -54,3 +54,24 @@ main {
 	width:130px;
 }
 
+@media (max-width: 710px) {
+
+	.numba-won, .span-heart {
+		display: none;
+	}
+
+	.signup-login {
+		display: block;
+		width: 70vw;
+		align-items: center;
+		margin: auto;
+	}
+
+	.app-name {
+		font-size:55px;
+	}
+	
+	.app-logo {
+		width:90px;
+	}
+}
