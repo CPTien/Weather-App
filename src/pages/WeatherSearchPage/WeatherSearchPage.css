@@ -26,10 +26,9 @@
     border-color: white;
     border-radius: 20px;
     cursor:pointer;
-    overflow: hidden; 
     padding: 10px;
     margin-bottom: 120px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .btn-for-search:hover {

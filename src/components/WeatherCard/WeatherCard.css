@@ -67,7 +67,6 @@
 }
 
 .min-max-temp {
-    /* padding-bottom: 20px; */
     font-size: 13px;
     margin-top: 28px;
     justify-self: center;
@@ -78,3 +77,46 @@
 }
 
 
+@media (max-width: 450px) {
+    .weather-card {
+        width: 350px;
+    }
+
+    .weather-icon {
+
+    }
+    
+    .location-name {
+
+        margin-top: 15px;
+        font-size: 16px;
+
+    }
+    
+    .temp {
+        justify-self: center;
+        margin-top: 0px;
+        font-size: 26px;
+
+    }
+    
+    
+    .detail-btn-class {
+
+    }
+    
+    .detail-btn {
+
+        padding: 6px 8px;
+
+    }
+    
+    .detail-btn:hover {
+
+    }
+    
+    .min-max-temp {
+        font-size: 12px;
+        margin-top: 28px;
+    }
+}

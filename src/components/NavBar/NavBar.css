@@ -11,19 +11,11 @@ nav {
   color: white;
   text-decoration: none;
   font-size: 14px;
-  
 }
-/* 
-.nav:hover {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-} */
 
 .nav-1 {
   float: left;
   margin-left: 15px;
-  
 }
 
 .app-logo-nav {
@@ -75,6 +67,44 @@ nav {
   font-size: 14px;
 }
 
-/* .bs-con {
-  color: white;
-} */
+@media (max-width: 640px) {
+  nav {
+    height:34px;
+  }
+
+  .app-icon-text {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .app-logo-nav {
+    float: left;
+    width: 26px;
+    margin-right: 10px;
+  }
+
+  nav {
+    padding-left: 0px;
+  }
+
+  .welcome-message {
+    font-size: 1px;
+    color:transparent;
+  }
+  
+  .nav-search-location {
+    margin-right: 0px;
+    font-size: 12px;
+  }
+
+  .nav-location-list {
+    margin-right: 0px;
+    font-size: 12px;
+  }
+
+  .logout-icon {
+    margin-top: 9px;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+}
