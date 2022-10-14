@@ -34,11 +34,11 @@ function WeatherDetailPage({ weather, setWeather, user }) {
       setWeather(weather);
 
       setIcon(weather.weather[0].icon);
-      setTemperature(weather.main.temp);
+      setTemperature(weather.main.temp.toFixed());
       setDescription(weather.weather[0].description);
-      setFeelsLike(weather.main.feels_like);
-      setHumidity(weather.main.humidity);
-      setWindSpeed(weather.wind.speed);
+      setFeelsLike(weather.main.feels_like.toFixed());
+      setHumidity(weather.main.humidity.toFixed());
+      setWindSpeed(weather.wind.speed.toFixed());
 
       console.log("get weather function in detail page",weather);
     }

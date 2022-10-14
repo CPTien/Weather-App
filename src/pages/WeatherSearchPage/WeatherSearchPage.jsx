@@ -28,7 +28,7 @@ function WeatherSearchPage({ getWeather }) {
 
     // method:2
     setIcon(weathers.weather[0].icon);
-    setTemperature(weathers.main.temp);
+    setTemperature(weathers.main.temp.toFixed());
     setDescription(weathers.weather[0].description);
 
     // testing below:

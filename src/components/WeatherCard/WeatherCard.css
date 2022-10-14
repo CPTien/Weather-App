@@ -53,8 +53,8 @@
 .detail-btn {
     color: white;
 	background-color: rgba(0,0,0,0.25);
-    border: 1px solid;
-    border-color: rgb(255, 255, 255, 0.5);
+    border: 1px solid white;
+    border-color: white;
     padding: 8px 10px;
     border-radius: 10px; 
     cursor:pointer;
