@@ -64,14 +64,13 @@ nav {
   margin-top: 5px;
 }
 
-/* .nav-no-icon:hover {
-  font-size: 14px;
-  color:bisque;
-  margin-top: 3px;
-} */
-
 .welcome-message:hover {
-  font-size: 12px;
+  font-size: 14px;
   color:white;
+}
+
+.logout-icon {
+  margin-top: 7px;
+  font-size: 14px;
 }
 

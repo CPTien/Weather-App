@@ -29,6 +29,7 @@
     overflow: hidden; 
     padding: 10px;
     margin-bottom: 120px;
+    font-size: 14px;
 }
 
 .btn-for-search:hover {
