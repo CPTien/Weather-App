@@ -14,6 +14,10 @@ function WeatherDetailPage({ weather, setWeather, user }) {
   const [feels_like, setFeelsLike] = useState("");
   const [humidity, setHumidity] = useState("");
   const [wind_speed, setWindSpeed] = useState("");
+  const [min, setMin] = useState("");
+  const [max, setMax] = useState("");
+  const [time, setTime] = useState("");
+  const [country, setCountry] = useState("");
 
   const navigate = useNavigate();
 
@@ -26,6 +30,10 @@ function WeatherDetailPage({ weather, setWeather, user }) {
     feels_like: feels_like,
     humidity: humidity,
     wind_speed: wind_speed,
+    min: min,
+    max: max,
+    time: time,
+    country: country,
   };
   
   useEffect(function () {
@@ -39,6 +47,10 @@ function WeatherDetailPage({ weather, setWeather, user }) {
       setFeelsLike(weather.main.feels_like.toFixed());
       setHumidity(weather.main.humidity.toFixed());
       setWindSpeed(weather.wind.speed.toFixed());
+      setMin(weather.main.temp_min.toFixed());
+      setMax(weather.main.temp_max.toFixed());
+      setTime(weather.dt);
+      setCountry(weather.sys.country);
 
       console.log("get weather function in detail page",weather);
     }
@@ -60,7 +72,7 @@ function WeatherDetailPage({ weather, setWeather, user }) {
         <div className="logo-detail"><img className="logo-detail-img" alt={weather.name} src={`http://openweathermap.org/img/wn/${icon}@2x.png`}></img></div>
 
         {/* location */}
-        <di className="location-detail">{weather.name}</di>
+        <di className="location-detail">{weather.name} - {country}</di>
 
         {/* temp */}
         {/* <div>{weather.main ? <p>Temperature: {weather.main.temp.toFixed()} °F</p> : null }</div> */}
@@ -74,17 +86,20 @@ function WeatherDetailPage({ weather, setWeather, user }) {
         {/* feels_like */}
         {/* <div>{weather.main ? <p>Feels Like: {weather.main.feels_like.toFixed()}</p> : null }</div> */}
         <div className="feels-detail-text info">Feels Like </div>
-        <div className="feels-detail-data info-2">{feels_like}</div>
+        <div className="feels-detail-data info-2">{feels_like} °F</div>
 
         {/* humidity */}
         {/* <div>{weather.main ? <p>Humidity: {weather.main.humidity}</p> : null }</div> */}
-        <div className="humidity-detail-text info">Humidity </div>
-        <div className="humidity-detail-data info-2">{humidity}</div>
+        <div className="humidity-detail-text info">Humidity</div>
+        <div className="humidity-detail-data info-2">{humidity}%</div>
 
         {/* wind_speed */}
         {/* <div>{weather.wind ? <p>Wind Speed: {weather.wind.speed.toFixed()}</p> : null }</div> */}
         <div className="wind-detail-text info">Wind Speed </div>
-        <div className="wind-detail-data info-2">{wind_speed}</div>
+        <div className="wind-detail-data info-2">{wind_speed} m/s</div>
+
+        {/* min and max temp */}
+        <div className="min-max-detail-data">Min - {min} °F | Max - {max} °F</div>
 
       <div className="add-btn-detail">
         <button className="detail-btn-2" onClick={handleAddToLocationList}>Add to Locations</button>

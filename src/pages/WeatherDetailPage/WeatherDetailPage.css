@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(10, 1fr); 
     width: 450px;
-    height: 500px;
+    height: 420px;
     align-items: center;
     color: white;
     box-shadow: 1px 1px 1000px white;
@@ -15,8 +15,8 @@
 .logo-detail {
     /* padding-left: 26px; */
     justify-self: start;
-    grid-column-start: 2;
-	grid-column-end: 3;
+    grid-column-start: 1;
+	grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
 }
@@ -28,7 +28,7 @@
 .location-detail {
     align-self: end;
     justify-self: end;
-    margin-top: 17px;
+    margin-top: 40px;
     font-size: 30px;
     font-weight: bold;
     grid-column-start: 1;
@@ -39,7 +39,7 @@
 
 .temp-detail {
     justify-self: end;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 45px;
     font-weight: bold;
     grid-column-start: 1;
@@ -51,13 +51,14 @@
 .des-detail-data {
     justify-self: end;
     grid-column-start: 2;
-	grid-column-end: 10;
+	grid-column-end: 9;
     grid-row-start: 3;
     grid-row-end: 4;
 }
 
 .des-detail-text {
     justify-self: start;
+    margin-left: 28px;
     grid-column-start: 2;
 	grid-column-end: 10;
     grid-row-start: 3;
@@ -67,13 +68,14 @@
 .feels-detail-data {
     justify-self: end;
     grid-column-start: 2;
-	grid-column-end: 10;
+	grid-column-end: 9;
     grid-row-start: 5;
     grid-row-end: 6;
 }
 
 .feels-detail-text {
     justify-self: start;
+    margin-left: 28px;
     grid-column-start: 2;
 	grid-column-end: 10;
     grid-row-start: 5;
@@ -83,13 +85,14 @@
 .humidity-detail-data {
     justify-self: end;
     grid-column-start: 2;
-	grid-column-end: 10;
+	grid-column-end: 9;
     grid-row-start: 6;
     grid-row-end: 7;
 }
 
 .humidity-detail-text {
     justify-self: start;
+    margin-left: 28px;
     grid-column-start: 2;
 	grid-column-end: 10;
     grid-row-start: 6;
@@ -99,13 +102,14 @@
 .wind-detail-data {
     justify-self: end;
     grid-column-start: 2;
-	grid-column-end: 10;
+	grid-column-end: 9;
     grid-row-start: 4;
     grid-row-end: 5;
 }
 
 .wind-detail-text {
     justify-self: start;
+    margin-left: 28px;
     grid-column-start: 2;
 	grid-column-end: 10;
     grid-row-start: 4;
@@ -139,11 +143,19 @@
 }
 
 .info {
-    font-size: 20px;
-    color: bisque;
+    font-size: 18px;
+    color: azure;
 }
 
 .info-2 {
-    font-size: 20px;
+    font-size: 18px;
     color: azure;
+}
+
+.min-max-detail-data {
+    justify-self: center;
+    grid-column-start: 2;
+	grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 7;
 }

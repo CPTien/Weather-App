@@ -3,7 +3,7 @@ import "./WeatherCard.css";
 
 
 
-function WeatherCard({ weather, temperature, icon, description }) {
+function WeatherCard({ weather, temperature, icon, description, min, max, time, country }) {
 
   return (
     
@@ -17,8 +17,9 @@ function WeatherCard({ weather, temperature, icon, description }) {
       
       {/* 2nd method - to call the img from public local storage */}
       {/* <div>{weather.weather? <img src={`icons/${weather.weather[0].icon}.png`}></img> : null }</div> */}
-      
-      <div className="location-name"> {weather.name}</div>
+
+      {weather.name !== undefined &&
+      <div className="location-name"> {weather.name} - {country}</div>}
       {/* <div className="location-name"> Kaohsiung City</div> */}
 
       {/* shift + option + 8 = ° */}
@@ -33,6 +34,10 @@ function WeatherCard({ weather, temperature, icon, description }) {
       {/* <div>{weather.weather ? <p>{weather.weather[0].main}</p> : null }</div> */}
       {/* <div><p>{description}</p></div> */}
       {/* <div className="desc"><p>few clouds</p></div> */}
+      
+      {/* min max temp */}
+      {weather.name !== undefined &&
+      <div className="min-max-temp"><p> Min - {min} °F | Max - {max} °F</p> </div>}
       
 
       

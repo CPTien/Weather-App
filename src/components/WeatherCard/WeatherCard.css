@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(10, 1fr); 
     width: 450px;
-    height: 100px;
+    height: 120px;
     align-items: center;
     color: white;
     box-shadow: 1px 1px 1000px white;
@@ -21,21 +21,21 @@
 }
 
 .location-name {
-    justify-self: start;
-    margin-top: 17px;
+    justify-self: center;
+    margin-top: 15px;
     font-size: 22px;
-    grid-column-start: 5;
+    grid-column-start: 2;
 	grid-column-end: 10;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 
 .temp {
-    justify-self: start;
-    margin-top: 30px;
+    justify-self: center;
+    margin-top: 2px;
     font-size: 30px;
     font-weight: bold;
-    grid-column-start: 5;
+    grid-column-start: 2;
 	grid-column-end: 10;
     grid-row-start: 2;
     grid-row-end: 5;
@@ -47,7 +47,7 @@
     grid-column-start: 1;
 	grid-column-end: 10;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 5;
 }
 
 .detail-btn {
@@ -66,5 +66,15 @@
     box-shadow: 1px 1px 15px white;
 }
 
+.min-max-temp {
+    /* padding-bottom: 20px; */
+    font-size: 13px;
+    margin-top: 28px;
+    justify-self: center;
+    grid-column-start: 2;
+	grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
 
 

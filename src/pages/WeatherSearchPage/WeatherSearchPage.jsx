@@ -10,10 +10,13 @@ function WeatherSearchPage({ getWeather }) {
   const [weatherSearch, setWeatherSearch] = useState("");
   // Render List of Weathers via keywords
   const [weatherList, setWeatherList] = useState("");
-  // sara's help
   const [icon, setIcon] = useState("");
   const [temperature, setTemperature] = useState("");
   const [description, setDescription] = useState("");
+  const [min, setMin] = useState("");
+  const [max, setMax] = useState("");
+  const [time, setTime] = useState("");
+  const [country, setCountry] = useState("");
 
   // to get lon and lat
   // const [lon, setLon] = useState("");
@@ -30,11 +33,15 @@ function WeatherSearchPage({ getWeather }) {
     setIcon(weathers.weather[0].icon);
     setTemperature(weathers.main.temp.toFixed());
     setDescription(weathers.weather[0].description);
+    setMin(weathers.main.temp_min.toFixed());
+    setMax(weathers.main.temp_max.toFixed());
+    setCountry(weathers.sys.country);
+    setTime(weathers.dt);
 
     // testing below:
-    console.log("handle weather search 1", weathers);
-    console.log("handle weather search 2", weathers.main.temp)
-    console.log("handle weather search 3", weathers.weather[0].description)
+    console.log("handle weather search 1", weathers.main.temp_min.toFixed());
+    console.log("handle weather search 2",weathers.main.temp_max.toFixed())
+    console.log("handle weather search 3", weathers.sys.country)
 
     // to get the Lon & Lat of the location, testing below:
     console.log(`lon: ${weathers.coord.lon} && lat: ${weathers.coord.lat}`)
@@ -66,19 +73,22 @@ function WeatherSearchPage({ getWeather }) {
       </form>
 
       <div className="weather-card-div">
-        {/* {!weatherList.error ? weatherList.map((weather) => ( */}
+
           <WeatherCard 
           weather={weatherList} 
           temperature={temperature}
           icon={icon}
           description={description}
+          min={min}
+          max={max}
+          time={time}
+          country={country}
           key={weatherList.id} 
           getWeather={getWeather} 
-
           // lon={lon}
           // lat={lat}
           />
-        {/* )): weatherList.error} */}
+
       </div>
       </center>
     </>

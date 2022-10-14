@@ -2,7 +2,7 @@ import * as weatherApiService from "../../utilities/weather-api-service";
 import { useState, useEffect } from "react";
 import "./LocationListPage.css";
 
-function LocationListPage({ weather, locationList, setLocationList, user }) {
+function LocationListPage({ weather, locationList, setLocationList, user}) {
 
   const [userLocationList, setUserLocationList] = useState();
 
@@ -32,7 +32,7 @@ function LocationListPage({ weather, locationList, setLocationList, user }) {
           
           <div className="weather-icon"><img alt={weather.icon} src={`http://openweathermap.org/img/wn/${weather.icon}@2x.png`}></img></div>
           
-          <div className="location-name">{weather.location}</div>
+          <div className="location-name">{weather.location} - {weather.country}</div>
 
           {/* <div className="desc">{weather.description}</div> */}
 
@@ -41,6 +41,9 @@ function LocationListPage({ weather, locationList, setLocationList, user }) {
           <div className="detail-btn-class">
           <button className="detail-btn" onClick={() => {deleteWeatherFromLocationList(weather._id)}}>Delete</button>
           </div>
+
+          
+          <div className="min-max-temp"><p> Min - {weather.min} °F | Max - {weather.max} °F</p> </div>
 
         </div>)}
     </center>
