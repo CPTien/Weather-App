@@ -12,7 +12,7 @@
 
 | Description | Screenshot |
 |------------ | ------------|
-| <h3 align="center">Log-in/Sign-up page</h3> | <img src="public/screenshots/AuthPage.png" width="700"/> |
+| <h3 align="center">Log-in/Sign-up page</h3> | [](public/screenshots/AuthPage.png")|
 | <h3 align="center">Search Weather Page</h3> | <img src="public/screenshots/SearchPage.png" width="700"/> |
 | <h3 align="center">Weather Detail Page</h3> | <img src="public/screenshots/DetailPage.png" width="700"/> |
 | <h3 align="center">Saved Locations Page</h3> | <img src="public/screenshots/SavedPage.png" width="700"/> |
