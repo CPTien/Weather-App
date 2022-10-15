@@ -73,23 +73,23 @@ h2 {
     }
 
     .review-1 {
-        color: transparent;
+        display: none;
     }
     
     .review-2 {
-        color: transparent;
+        display: none;
     }
     
     .review-3 {
-        color: transparent;
+        display: none;
     } 
     
 
     .ppl {
-        color: transparent;
+        display: none;
     }
 
     .position {
-        color: transparent;
+        display: none;
     }
 }

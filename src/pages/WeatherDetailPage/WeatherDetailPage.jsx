@@ -40,7 +40,6 @@ function WeatherDetailPage({ weather, setWeather, user }) {
     async function getWeather() {
       const weather = await weatherApiService.getWeatherDetails(weatherId);
       setWeather(weather);
-
       setIcon(weather.weather[0].icon);
       setTemperature(weather.main.temp.toFixed());
       setDescription(weather.weather[0].description);
@@ -51,8 +50,7 @@ function WeatherDetailPage({ weather, setWeather, user }) {
       setMax(weather.main.temp_max.toFixed());
       setTime(weather.dt);
       setCountry(weather.sys.country);
-
-      console.log("get weather function in detail page",weather);
+      console.log("get weather function in detail page", weather);
     }
     getWeather();
   }, []);
