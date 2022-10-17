@@ -3,7 +3,6 @@ import sendRequest from "./send-request";
 const BASE_URL = "/api/weathers";
 
 export function searchWeathers(query) {
-  console.log("from weather-api-service, searchWeather", query)
   return sendRequest(`${BASE_URL}/search`, 'POST', {query});
 }
 

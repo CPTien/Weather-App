@@ -7,7 +7,7 @@ import { useState } from "react";
 function WeatherDetailPage({ weather, setWeather, user }) {
   
   const { weatherId } = useParams();
-  // weatherId = Tokyo
+
   const [icon, setIcon] = useState("");
   const [temperature, setTemperature] = useState("");
   const [description, setDescription] = useState("");
@@ -50,14 +50,12 @@ function WeatherDetailPage({ weather, setWeather, user }) {
       setMax(weather.main.temp_max.toFixed());
       setTime(weather.dt);
       setCountry(weather.sys.country);
-      console.log("get weather function in detail page", weather);
     }
     getWeather();
   }, []);
 
   async function handleAddToLocationList() {
     const addWeather = await weatherApiService.addWeatherToLocationList(savedLocationInfo);
-    console.log("handel add to location list in detail page", addWeather);
     navigate('/locationList')
   }
 

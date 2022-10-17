@@ -43,6 +43,17 @@
 
 ---
 
+## Hurdles
+- Was having trouble rendering the weather API info, was able to solved the issue by console logging everything :)
+
+---
+
+## Wins
+- Have better understanding on the MERN stack, especially on REACT.
+- Getting better at CSS
+
+---
+
 ## Future Add-Ons
 - Add forecast weather data by implementing another API 
 - New home page showing 5 cities weather

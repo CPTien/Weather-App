@@ -2,7 +2,6 @@ import './App.css';
 import {useState} from 'react';
 import {getUser} from '../../utilities/users-service';
 import {Routes, Route} from 'react-router-dom';
-// Import Page components
 import AuthPage from '../AuthPage/AuthPage';
 import NavBar from '../../components/NavBar/NavBar';
 import HomePage from '../HomePage/HomePage';
@@ -10,15 +9,8 @@ import WeatherSearchPage from '../WeatherSearchPage/WeatherSearchPage';
 import WeatherDetailPage from '../WeatherDetailPage/WeatherDetailPage';
 import LocationListPage from '../LocationListPage/LocationListPage';
 
-
-
-
 function App() {
-  // set the user by calling getUser function
   const [user, setUser] = useState(getUser());
-
-  console.log(user);
-
   const [weather, setWeather] = useState({});
   const [locationList, setLocationList] = useState();
 

@@ -10,7 +10,6 @@ export default function AuthPage({setUser}) {
   return (
     <main>
       
-      
       <h1 className="app-name">Weather<img className="app-logo" src={MyImage} alt=""/></h1>
       
       <div className="signup-login">
@@ -21,9 +20,11 @@ export default function AuthPage({setUser}) {
           :
           <LoginForm setUser={setUser}/>
         }
+
         <center>
         <button className="button-2" onClick={() => setShowSignUp(!showSignUp)}>{showSignUp ? 'Aleady have an Account? Log In Here' : 'No Account? Sign Up Here'}</button>
         </center>
+        
         </div>
       </div>
     </main>

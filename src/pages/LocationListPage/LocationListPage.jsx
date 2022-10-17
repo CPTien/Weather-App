@@ -12,7 +12,6 @@ function LocationListPage({ weather, locationList, setLocationList, user}) {
     async function getUserLocationList() {
       const userLocationList = await weatherApiService.getLocationList();
       setUserLocationList(userLocationList);
-      console.log(userLocationList);
     }
     getUserLocationList();
   }, [refresh]);
@@ -34,15 +33,12 @@ function LocationListPage({ weather, locationList, setLocationList, user}) {
           
           <div className="location-name">{weather.location} - {weather.country}</div>
 
-          {/* <div className="desc">{weather.description}</div> */}
-
           <div className="temp">{weather.temp} °F</div>
 
           <div className="detail-btn-class">
           <button className="detail-btn" onClick={() => {deleteWeatherFromLocationList(weather._id)}}>Delete</button>
           </div>
 
-          
           <div className="min-max-temp"><p> Min - {weather.min} °F | Max - {weather.max} °F</p> </div>
 
         </div>)}

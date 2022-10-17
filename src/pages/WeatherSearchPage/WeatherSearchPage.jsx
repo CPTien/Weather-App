@@ -17,12 +17,7 @@ function WeatherSearchPage({ getWeather }) {
   const [max, setMax] = useState("");
   const [time, setTime] = useState("");
   const [country, setCountry] = useState("");
-
-  // to get lon and lat
-  // const [lon, setLon] = useState("");
-  // const [lat, setLat] = useState("");
-  // setLon(weathers.coord.lon);
-  // setLat(weathers.coord.lat);
+  
 
   async function handleWeatherSearch(evt) {
     evt.preventDefault();
@@ -37,14 +32,6 @@ function WeatherSearchPage({ getWeather }) {
     setMax(weathers.main.temp_max.toFixed());
     setCountry(weathers.sys.country);
     setTime(weathers.dt);
-
-    // testing below:
-    console.log("handle weather search 1", weathers.main.temp_min.toFixed());
-    console.log("handle weather search 2",weathers.main.temp_max.toFixed())
-    console.log("handle weather search 3", weathers.sys.country)
-
-    // to get the Lon & Lat of the location, testing below:
-    console.log(`lon: ${weathers.coord.lon} && lat: ${weathers.coord.lat}`)
   }
 
   return (
@@ -52,8 +39,6 @@ function WeatherSearchPage({ getWeather }) {
       <center>
         
       <form className="weather-search-form" onSubmit={handleWeatherSearch}>
-
-        {/* <h1 className="">Search for Weather - to be deleted</h1> */}
 
         <div className="input-plus-button">
         <input
@@ -85,8 +70,6 @@ function WeatherSearchPage({ getWeather }) {
           country={country}
           key={weatherList.id} 
           getWeather={getWeather} 
-          // lon={lon}
-          // lat={lat}
           />
 
       </div>

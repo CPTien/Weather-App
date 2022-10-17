@@ -2,14 +2,6 @@ import {Link} from 'react-router-dom';
 import * as userService from '../../utilities/users-service';
 import "./NavBar.css";
 import MyImage from './Logo.png';
-// import { CiLogout } from "react-icons/ci";
-
-
-//new
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 import { FiLogOut } from 'react-icons/fi';
 
 export default function NavBar({user, setUser}) {
@@ -38,23 +30,6 @@ export default function NavBar({user, setUser}) {
       <span className='nav nav-2 welcome-message nav-no-icon' >Hi! {user.name}</span>
 
     </nav>
-    
-    // <Navbar bsClass="aaa" bg="" expand="lg">
-    // <Container bsClass='bs-con'>
-    //     <Navbar.Brand href="/">Weather<img className="app-logo-nav" src={MyImage} alt=""/></Navbar.Brand>
-    //     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    //     <Navbar.Collapse id="basic-navbar-nav">
-    //         <Nav className="me-auto">
-    //         <Nav.Link href="/weathers">Weather</Nav.Link>
-    //         <Nav.Link href="/locationList">Search Location</Nav.Link>
-    //         </Nav>
-    //     </Navbar.Collapse>
-
-    //     <span>Hi, {user.name}</span>
-    //     &nbsp;&nbsp; <Link to={""} onClick={handleLogOut}><FiLogOut /></Link>
-    // </Container> 
-    // </Navbar>
-
 
   );
 }

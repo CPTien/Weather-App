@@ -13,7 +13,6 @@
 }
 
 .logo-detail {
-    /* padding-left: 26px; */
     justify-self: start;
     grid-column-start: 1;
 	grid-column-end: 4;
@@ -200,5 +199,4 @@
         width: 160px;
         margin-left: 12px;
     }
-
 }
