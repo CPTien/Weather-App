@@ -12,6 +12,13 @@ async function searchWeathers(req, res) {
   res.json(weather);
 }
 
+// async function searchDetailWeathers(req, res) {
+//   // need "&units=imperial" in URL in order to make the temp display in °F instead of °K (default value)
+//   const weather = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${req.body.query}&units=imperial&appid=${process.env.API_KEY}`).then(res => res.json());
+//   // console.log(`controller/api searchWeather: `, weather)
+//   if (!weather.name) return res.json({error: `Location does not exist! Please try again.`});
+//   res.json(weather);
+// }
 
 async function getAllWeathers(req, res) {
   const weathers = await Weather.find({users: req.user._id});
@@ -59,4 +66,6 @@ module.exports = {
   addWeatherToLocationList,
   getLocationList,
   deleteWeatherFromLocationList,
+  // searchDetailWeathers,
+
 }

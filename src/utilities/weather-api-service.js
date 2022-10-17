@@ -26,3 +26,10 @@ export function getLocationList() {
 export function deleteWeatherFromLocationList(id) {
   return sendRequest(`${BASE_URL}/${id}`, 'DELETE')
 }
+
+//testing below
+
+// export function searchDetailWeathers(query) {
+//   console.log("from weather-api-service, searchWeather", query)
+//   return sendRequest(`${BASE_URL}/search`, 'POST', {query});
+// }

@@ -15,4 +15,8 @@ router.get('/locationList', ensureLoggedIn, weathersCtrl.getLocationList);
 
 router.delete('/:id', ensureLoggedIn, weathersCtrl.deleteWeatherFromLocationList);
 
+// testing below:
+// router.post('/locationList', weathersCtrl.searchDetailWeathers);
+
+
 module.exports = router;

@@ -8,11 +8,14 @@ function LocationListPage({ weather, locationList, setLocationList, user}) {
 
   const [refresh, setRefresh] = useState(false);
 
+  // We only need the location (city) name in data base, we pass the city name here, we use it to fetch the rest of the current weather!
+
+  
+
   useEffect(() => {
     async function getUserLocationList() {
       const userLocationList = await weatherApiService.getLocationList();
       setUserLocationList(userLocationList);
-      console.log(userLocationList);
     }
     getUserLocationList();
   }, [refresh]);
@@ -33,8 +36,6 @@ function LocationListPage({ weather, locationList, setLocationList, user}) {
           <div className="weather-icon"><img alt={weather.icon} src={`http://openweathermap.org/img/wn/${weather.icon}@2x.png`}></img></div>
           
           <div className="location-name">{weather.location} - {weather.country}</div>
-
-          {/* <div className="desc">{weather.description}</div> */}
 
           <div className="temp">{weather.temp} °F</div>
 
